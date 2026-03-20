@@ -1,0 +1,15 @@
+-- Crear el proyecto
+npm create vit@latest
+
+-- Presionar "y" para que se descarguen los archivos
+
+-- Indicamos el nombre del archivo
+
+-- Seleccionamos Vue
+
+-- Seleccionamos JavaScript
+
+cd nombre-proyecto
+npm install
+npm run dev
+
