@@ -13,3 +13,5 @@ cd nombre-proyecto
 npm install
 npm run dev
 
+-- Ejecutar el proyecto en Localhost 
+http://localhost:5173/
