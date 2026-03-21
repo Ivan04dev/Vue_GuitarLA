@@ -1,0 +1,21 @@
+// Composition API
+// Se definen los componentes utilizando imports (funciones de Vue y/o librerías)
+// Se coloca setup en script 
+// Utiliza 2 funciones para reactividad: reactive y ref (similar a React)
+
+import { ref } from 'vue'
+
+const productos = ref([])
+const carrito = ref([])
+
+const consultarAPI = () => {
+    fetch('http://ecomerce.site/api')
+        .then(res => res.json())
+        .then(data => productos.value = data.data)
+}
+
+consultarAPI()
+
+const agregarCarrito(producto){
+    carrito.value.push(guitarra)
+}
