@@ -1,0 +1,4 @@
+Si se tiene un archivo global css se reemplaza por el que está en la raíz del proyecto.
+La carpeta de imagenes se coloca dentro de public.
+El código HTML va dentro de template.
+Para hacer referencia al contenido que esté dentro de public no se coloca el nombre de la carpeta, ejemplo: img/nombre_imagen.jpg en lugar de ./public/img/nombre_imagen.jpg
