@@ -1,0 +1,19 @@
+export default({
+    components: { Products },
+    data(){
+        return{
+            productos: [],
+            carrito: []
+        }
+    },
+    mounted(){
+        fetch('http://ecomerce.site/api')
+            .then(res => res.json())
+            .then(data => this.productos = data.data)
+    },
+    methods(){
+        agregarCarrito(producto){
+            this.carrito.push(producto)
+        }
+    }
+})
