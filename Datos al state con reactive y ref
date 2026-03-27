@@ -1,0 +1,18 @@
+-- Una vez que simulamos la DB con un archivo JSON dentro de src/data se importa de la siguiente manera:
+
+import { ref, reactive } from 'vue'
+import { db } from "./data/guitarras"
+
+-- Con reactive (orientado a objetos)
+
+const state = reactive({
+  guitarras: db
+});
+
+console.log(state.guitarras);
+
+-- Con ref (maneja diferentes tipos de datos)
+
+const guitarras = ref([db])
+
+console.log(guitarras.value);
