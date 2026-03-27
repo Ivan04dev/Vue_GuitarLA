@@ -3,7 +3,7 @@
 import { ref, reactive } from 'vue'
 import { db } from "./data/guitarras"
 
--- Con reactive (orientado a objetos)
+-- Con reactive (orientado a objetos, para datos agrupados)
 
 const state = reactive({
   guitarras: db
