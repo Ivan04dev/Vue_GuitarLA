@@ -16,3 +16,11 @@ console.log(state.guitarras);
 const guitarras = ref([db])
 
 console.log(guitarras.value);
+
+-- Métodos del ciclo de vida
+
+-- Funciona en cuanto el componente se encuentre listo (montado)
+onMounted(() => {
+    guitarras.value = db
+    state.guitarras = db
+})
