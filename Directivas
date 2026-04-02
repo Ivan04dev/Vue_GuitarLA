@@ -1,1 +1,7 @@
+v-for
 
+Se utiliza para recorrer arreglos
+
+v-for="guitarra in guitarras"
+
+v-bind=""
