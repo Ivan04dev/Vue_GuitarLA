@@ -1,0 +1,4 @@
+:src="'/img/' + guitarra.imagen + '.jpg'"
+:alt="'imagen guitarra' + guitarra.nombre"
+
+Se agregan ":" antes del atributo y se concatenan con '' y +
