@@ -1,0 +1,36 @@
+-- Evento definido en el componente padre
+
+<script setup>
+  const agregarCarrito = (guitarra) => {
+    console.log("Agregando...", guitarra);
+  };
+</script>
+
+-- Se pasa como props
+<template>
+  <Guitar
+      v-for="guitarra in guitarras"
+      :guitarra="guitarra"
+      @agregar-carrito="agregarCarrito"
+  />
+</template>
+
+-- =============================================================
+
+-- Componente hijo
+<script setup>
+  defineEmits(["agregar-carrito"]);
+</script>
+
+-- Se utiliza así:
+<template>
+  <button
+    type="button"
+    class="btn btn-dark w-100"
+    @click="$emit('agregar-carrito', guitarra)"
+  >
+    Agregar al Carrito
+  </button>
+</template>
+
+-- Para pasar datos del componente hijo al componente padre desde el mismo evento se coloca como segundo parámetro
